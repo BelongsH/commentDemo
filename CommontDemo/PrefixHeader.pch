@@ -10,5 +10,6 @@
 #define PrefixHeader_pch
 
 #import "HeaderContent.h"
+#import "UIImage+NXUIImage.h"
 
 #endif /* PrefixHeader_pch */

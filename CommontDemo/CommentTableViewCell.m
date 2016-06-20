@@ -78,8 +78,8 @@
     CommentGroupModel *model = commentGroupFrame.commentGroup;
     
     // 设置头像属性
-    _iconImgV.image = [UIImage imageNamed:model.icon];
-    _iconImgV.layer.cornerRadius = commentGroupFrame.iconFrame.size.width / 2;
+    _iconImgV.image = [[UIImage imageNamed:model.icon] circleImage];
+    //_iconImgV.layer.cornerRadius = commentGroupFrame.iconFrame.size.width / 2;
     
     // 设置昵称属性
     _nameLbl.text = model.name;

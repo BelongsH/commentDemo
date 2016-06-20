@@ -65,7 +65,7 @@
     // 点赞按钮大小计算
     CGFloat likeX = SCREENW - commentW - 2 * kPadding - 100;
     CGFloat likeY = timeY;
-    CGFloat likeW = 100;
+    CGFloat likeW = 30;
     CGFloat likeH = 25;
     _likeFrame = CGRectMake(likeX, likeY, likeW, likeH);
     

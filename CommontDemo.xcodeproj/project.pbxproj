@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		290F81F4A07C1F17DE40637E /* libPods-CommontDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52539972A2DB93EBF56FFDEA /* libPods-CommontDemoUITests.a */; };
 		2DFB233110D2F7CA48AFC3E9 /* libPods-CommontDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFA1471B6CAEDA16FD3636E /* libPods-CommontDemo.a */; };
+		B39BBD6B1D17D51E008EE8D3 /* UIImage+NXUIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B39BBD681D17D51E008EE8D3 /* UIImage+NXUIImage.m */; };
 		C1DCF009D62F8CDAB7DF4CD5 /* libPods-CommontDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E31C8F876CF7AB043236FEBF /* libPods-CommontDemoTests.a */; };
 		C6313B031D139E0D00C26332 /* Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = C6313B021D139E0D00C26332 /* Emoji.m */; };
 		C6333B481CF81FF30099D7E6 /* 点赞1.png in Resources */ = {isa = PBXBuildFile; fileRef = C6333B471CF81FF30099D7E6 /* 点赞1.png */; };
@@ -65,6 +66,8 @@
 		6476F96273B949B4B2B49E34 /* Pods-CommontDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommontDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommontDemoUITests/Pods-CommontDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		93B637BEBED7504B712E996D /* Pods-CommontDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommontDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommontDemo/Pods-CommontDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B1BBD1C69C7414E65D1B483F /* Pods-CommontDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommontDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommontDemoUITests/Pods-CommontDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B39BBD671D17D51E008EE8D3 /* UIImage+NXUIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NXUIImage.h"; sourceTree = "<group>"; };
+		B39BBD681D17D51E008EE8D3 /* UIImage+NXUIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NXUIImage.m"; sourceTree = "<group>"; };
 		C6313B011D139E0D00C26332 /* Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emoji.h; sourceTree = "<group>"; };
 		C6313B021D139E0D00C26332 /* Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Emoji.m; sourceTree = "<group>"; };
 		C6333B421CF7F7560099D7E6 /* HeaderContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderContent.h; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 		C6333B4A1CF82A1A0099D7E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B39BBD671D17D51E008EE8D3 /* UIImage+NXUIImage.h */,
+				B39BBD681D17D51E008EE8D3 /* UIImage+NXUIImage.m */,
 				C65F2B271CF6E8A3008D7360 /* CommentTableViewCell.h */,
 				C65F2B281CF6E8A3008D7360 /* CommentTableViewCell.m */,
 			);
@@ -312,12 +317,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C65F2AF21CF6AA11008D7360 /* Build configuration list for PBXNativeTarget "CommontDemo" */;
 			buildPhases = (
-				7BDF941EE4C36A31362592A4 /* 📦 Check Pods Manifest.lock */,
+				7BDF941EE4C36A31362592A4 /* [CP] Check Pods Manifest.lock */,
 				C65F2AC11CF6AA0F008D7360 /* Sources */,
 				C65F2AC21CF6AA0F008D7360 /* Frameworks */,
 				C65F2AC31CF6AA0F008D7360 /* Resources */,
-				4B4493FF91B3947D84301A2A /* 📦 Embed Pods Frameworks */,
-				DE5870ACD199F7FE674961F1 /* 📦 Copy Pods Resources */,
+				4B4493FF91B3947D84301A2A /* [CP] Embed Pods Frameworks */,
+				DE5870ACD199F7FE674961F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -332,12 +337,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C65F2AF51CF6AA11008D7360 /* Build configuration list for PBXNativeTarget "CommontDemoTests" */;
 			buildPhases = (
-				C185E7A5DA8F4AB56ECC99CF /* 📦 Check Pods Manifest.lock */,
+				C185E7A5DA8F4AB56ECC99CF /* [CP] Check Pods Manifest.lock */,
 				C65F2ADA1CF6AA10008D7360 /* Sources */,
 				C65F2ADB1CF6AA10008D7360 /* Frameworks */,
 				C65F2ADC1CF6AA10008D7360 /* Resources */,
-				B031ABE4AA8FD01A25DC6855 /* 📦 Embed Pods Frameworks */,
-				9EC6799726F0D0D1BA89459D /* 📦 Copy Pods Resources */,
+				B031ABE4AA8FD01A25DC6855 /* [CP] Embed Pods Frameworks */,
+				9EC6799726F0D0D1BA89459D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -353,11 +358,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C65F2AF81CF6AA11008D7360 /* Build configuration list for PBXNativeTarget "CommontDemoUITests" */;
 			buildPhases = (
-				F50F319419B4BE362F49D1AD /* 📦 Check Pods Manifest.lock */,
+				F50F319419B4BE362F49D1AD /* [CP] Check Pods Manifest.lock */,
 				C65F2AE51CF6AA11008D7360 /* Sources */,
 				C65F2AE61CF6AA11008D7360 /* Frameworks */,
 				C65F2AE71CF6AA11008D7360 /* Resources */,
-				D517604CC1EBA234EB80D72D /* 📦 Copy Pods Resources */,
+				D517604CC1EBA234EB80D72D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -456,14 +461,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4B4493FF91B3947D84301A2A /* 📦 Embed Pods Frameworks */ = {
+		4B4493FF91B3947D84301A2A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,14 +476,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommontDemo/Pods-CommontDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7BDF941EE4C36A31362592A4 /* 📦 Check Pods Manifest.lock */ = {
+		7BDF941EE4C36A31362592A4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,14 +491,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9EC6799726F0D0D1BA89459D /* 📦 Copy Pods Resources */ = {
+		9EC6799726F0D0D1BA89459D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,14 +506,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommontDemoTests/Pods-CommontDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B031ABE4AA8FD01A25DC6855 /* 📦 Embed Pods Frameworks */ = {
+		B031ABE4AA8FD01A25DC6855 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,14 +521,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommontDemoTests/Pods-CommontDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C185E7A5DA8F4AB56ECC99CF /* 📦 Check Pods Manifest.lock */ = {
+		C185E7A5DA8F4AB56ECC99CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,14 +536,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D517604CC1EBA234EB80D72D /* 📦 Copy Pods Resources */ = {
+		D517604CC1EBA234EB80D72D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,14 +551,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommontDemoUITests/Pods-CommontDemoUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE5870ACD199F7FE674961F1 /* 📦 Copy Pods Resources */ = {
+		DE5870ACD199F7FE674961F1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,14 +566,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommontDemo/Pods-CommontDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F50F319419B4BE362F49D1AD /* 📦 Check Pods Manifest.lock */ = {
+		F50F319419B4BE362F49D1AD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +595,7 @@
 				C65F2B261CF6DE32008D7360 /* CommentGroupModel.m in Sources */,
 				C6AC14921D124FD600BC35D8 /* KeyBoardView.m in Sources */,
 				C6AC14951D12AC0300BC35D8 /* FaceBoard.m in Sources */,
+				B39BBD6B1D17D51E008EE8D3 /* UIImage+NXUIImage.m in Sources */,
 				C65F2ACD1CF6AA0F008D7360 /* AppDelegate.m in Sources */,
 				C65F2ACA1CF6AA0F008D7360 /* main.m in Sources */,
 			);
